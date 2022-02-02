@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/Layout/NavBar';
 import Dashboard from './Components/Dashboard/Dashboard';
 import ProjectDetails from './Components/Projects/ProjectDetails';
+import SignIn from './Components/Auth/SignIn';
+import SignUp from './Components/Auth/SignUp';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
         <Routes>
           <Route exact path="/" element={<Dashboard/>}/>
           <Route path="/project/:id" element={<ProjectDetails/>}/>
+          <Route path="/signin" element={<SignIn/>} />
+          <Route path="/signup" element={<SignUp/>} />
         </Routes>
       </div>
     </Router>
