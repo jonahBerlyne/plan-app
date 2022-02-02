@@ -5,6 +5,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import ProjectDetails from './Components/Projects/ProjectDetails';
 import SignIn from './Components/Auth/SignIn';
 import SignUp from './Components/Auth/SignUp';
+import CreateProject from './Components/Projects/CreateProject';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/project/:id" element={<ProjectDetails/>}/>
           <Route path="/signin" element={<SignIn/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/create" element={<CreateProject/>} />
         </Routes>
       </div>
     </Router>
